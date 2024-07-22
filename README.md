@@ -39,7 +39,7 @@
 
 1.  Запустите файл `audio_classifier_gradio.py`:
 ```bash
-    python audio_classifier_gradio.py
+python audio_classifier_gradio.py
 ```
  
 2.  Откройте веб-интерфейс:  Веб-интерфейс Gradio откроется в браузере.  
