@@ -1,0 +1,9 @@
+gradio
+librosa
+numpy
+pandas
+scipy
+scikit-learn
+tensorflow
+pydub
+keras
