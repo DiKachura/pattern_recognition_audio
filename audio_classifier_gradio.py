@@ -20,18 +20,18 @@ from tensorflow.keras.models import load_model
 import pickle
 
 # Загрузка архитектуры модели
-json_file = open('/content/last_model_architecture_2 (1).json', 'r')
+json_file = open('last_model_architecture_2 (1).json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 model = model_from_json(loaded_model_json)
 
 # Загрузка весов модели
-model.load_weights("/content/last_model_weights_2 (1).h5")
+model.load_weights("last_model_weights_2 (1).h5")
 
 # Загружаем scaler и enc
-with open('/content/scaler.pkl', 'rb') as file:
+with open('scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
-with open('/content/enc.pkl', 'rb') as file:
+with open('enc.pkl', 'rb') as file:
     enc = pickle.load(file)
 
 from pydub import AudioSegment
